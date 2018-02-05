@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.Throwable;
 /**
- * Read a text file with size of 2DArray in the first lien
+ * Read a text file with size of 2DArray in the first line
  *      and numbers in other lines.
  *      3 5
  *      13 4 8 14 1
