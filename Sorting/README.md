@@ -1,4 +1,4 @@
-**Practice of Sorting **
+**Practice of Sorting**
 ---
 - [Calculating the running time of sorting algorithms](https://github.com/Stakada/Programs/tree/master/Sorting/Calculating_Sorting)
   
