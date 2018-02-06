@@ -4,7 +4,7 @@
   
   This program generates an array with 100,000 elements. And sort it with Merge, Insertion, Shell, Quick, and Selection sort. And calculate the running time.
   
-- [Bubble sort]()
+- [Bubble sort](https://github.com/Stakada/Programs/blob/master/Sorting/BubbleSort/BubbleSortPractice.java)
 
   Implementing the Bubble sort, and count how many times swapp occurs.
 
