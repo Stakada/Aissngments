@@ -4,6 +4,10 @@
   
   This program generates an array with 100,000 elements. And sort it with Merge, Insertion, Shell, Quick, and Selection sort. And calculate the running time.
   
-- [Using Bubble sort. And print out a number or numbers of swapp occurs]()
+- [Bubble sort]()
 
--[]()
+  Implementing the Bubble sort, and count how many times swapp occurs.
+
+-[Selection Sort]()
+  
+  Implementing the Selection Sort, sort an unsorted array, and print out the sorted array's elements indexes of each elements in unsorted array. 
