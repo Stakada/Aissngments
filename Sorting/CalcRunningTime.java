@@ -8,7 +8,7 @@ import java.util.Random;
  * @Shota Takada
  * @Jan 16th, 2018
  */
-public class assingment2{
+public class CalcRunningTime{
     static long start, end ;
     static int[] arr;
     public static void printArr(int[] arr){
