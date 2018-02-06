@@ -1,5 +1,12 @@
 import java.util.*;
-class TestClass {
+/*
+* This program asks user to enter a size of an array.
+* After creating an array with the given size, it will prompt the user to enter numbers.
+* Sort the unsorted array, and printout the indexed of each elements in the unsorted array as the numbers are sorted. 
+*
+* @athor Shota Takada
+*/
+class SelectionSort {
     public static void main(String args[] ) throws Exception {
         Scanner s = new Scanner(System.in);
         int size = s.nextInt();
