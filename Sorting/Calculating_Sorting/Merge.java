@@ -20,12 +20,7 @@ public class Merge
         
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
+    
     private static void sort(int[] arr, int lo, int hi){
         
         if(lo < hi){
