@@ -8,9 +8,7 @@ public class Merge
     // instance variables - replace the example below with your own
     private static int[] aux;
 
-    /**
-     * Constructor for objects of class Merge
-     */
+    
     public static void sort(int[] arr){
         aux = new int[arr.length];
         sort(arr, 0, arr.length-1);
