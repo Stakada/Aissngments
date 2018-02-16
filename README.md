@@ -6,6 +6,6 @@ The programs I wrote in Java, HTML, etc.
 - Serching
 - MVC
 - - - 
-## HTML, CSS, PHP
-- my portpholio
+## HTML, CSS, JavaScript
+- [my portpholio](http://stakada.icoolshow.net/portpholio/index.html)
 - - -
