@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SLC</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		
+		<!-- Font Awesome !-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<script src="js/cookie.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/signin.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="card sign" style="max-width: 100% !important;">
+						<div class="card-header text-center">
+							<div class="text-white">
+								<h4> Sign In
+									<span class="fa fa-sign-in">
+
+									</span>
+								</h4>
+								<p> Enter Your SID to sign in</p>
+							</div>
+						</div>
+						
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<form method="POST">
+										<div id='errorMss' class="text-danger d-none">
+                                        	<h5>You're login was refused</h5>
+									 	</div>
+                                    	
+										<div class="form-group input">
+                                        	<p class="text-left font-weight-bold">SID : </p>
+                                        	<input class="rounded" type="password" id="sid" name="sid"  placeholder="Ex. 987654321" required>
+										</div>
+										
+										<div class="form-group">
+											<button class="btn btn-success text-white" id="signin">SIGN IN</button>
+										</div>
+										
+										<div class="text-center">
+											<a href="signup.html"> Create a new account</a>
+										</div>
+										
+									</form>
+								</div>
+							</div>
+						
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
