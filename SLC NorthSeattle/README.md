@@ -1,6 +1,8 @@
 **Tutor Requesting and Tutoring Session Management System**
 ---
-- [Student Side]()
+- Student Side
 ---
-- [Tutor Side]()
-- [Admin Side]()
+- Tutor Side
+---
+- Admin Side
+---
