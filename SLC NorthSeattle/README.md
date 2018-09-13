@@ -20,4 +20,4 @@ The session information will appeared in this syntax **Status Place Number : Sub
  - JavaScript, JQuery
  - PHP 
  - MySQL
- - React.js and Node.js in future.
+ - React.js and Node.js **in future**.
