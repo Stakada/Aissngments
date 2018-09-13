@@ -13,3 +13,11 @@ The session information will appeared in this syntax **Status Place Number : Sub
 ## Admin Side
  - In Admin side, administrators can add and delete centers, subjects, notifications, and administrators. These data are saved in the database, and student and tutor side can pull the informations.
  - **Report Page** - Administratos can get all students and tutors, individual student and tutor, and accumulated and detail resource reports. Report function requires administrators to choose center or enter SID, and to enter start and end date. 
+
+## Technology 
+ - HTML
+ - CSS (Bootstrap)
+ - JavaScript(JQuery)
+ - PHP 
+ - MySQL
+ - React.js and Node.js in future.
