@@ -16,8 +16,8 @@ The session information will appeared in this syntax **Status Place Number : Sub
 
 ## Technology 
  - HTML
- - CSS (Bootstrap)
- - JavaScript(JQuery)
+ - CSS, Bootstrap
+ - JavaScript, JQuery
  - PHP 
  - MySQL
  - React.js and Node.js in future.
