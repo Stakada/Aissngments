@@ -1,0 +1,343 @@
+body{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	display: flex;
+	flex-direction: row;
+	font-size:.8rem;
+	line-height: 1.6;
+	background: #f3f6f9;
+}
+
+.wrapper{
+	width:100%;
+}
+
+/****************************************************
+ *
+ *					
+ *
+ ***************************************************/
+
+.bg-blue{
+	background: #42a5f5 !important;
+}
+
+.blue{
+	color:#048CBF;
+}
+
+.right{
+	float:right !important;
+}
+
+.left{
+	float:left !important;
+}
+
+/*************
+ *
+ * 	Sign in
+ *
+ *************/
+	
+.input input{
+	width:100%;
+}
+
+.sign{
+    margin-top: 20%;
+	font-size: .7em;
+}
+
+
+.sign input:focus {
+	border-color: #42a5f5;
+}
+
+.sign .card-header{
+	text-align: center;
+}
+
+.sign .card-header{
+	background-color:rgba(100,100,100,0.5) !important;
+}
+
+.sign .btn{
+    width:100%;
+	margin-bottom: 10px;
+}
+
+
+/**************
+
+	Aside
+
+**************/
+.aside{
+	min-width: 100%;
+	flex-shrink: 0;
+	flex-direction: row;
+	position: relative;
+	/*min-height: 100vh;*/
+	background: #19222d;
+}
+
+.aside .navbar{
+	height:56px;
+	border-bottom: 1px solid #ddd !important;
+}
+
+.navbar-brand{
+	padding-left: 10px !important;
+}
+
+.sidenav-li{
+	display: none ;
+}
+
+img{
+	width: 16px;
+	margin-bottom: 3px;
+}
+
+.aside .navbar a{
+	font-size:18px;
+	color:#fff;
+}
+
+.navbar{
+	padding: 0rem !important;
+}
+
+.navbar-collapse{
+	background: #19222d;
+	z-index:999;
+}
+
+.navbar-collapse a{
+	font-size:18px !important;
+}
+
+.navbar-collapse .active{
+	color: #048CBF !important;
+}
+
+.sidenav-li .title{
+	color: #ddd;
+	font-size: 14px;
+}
+
+.sidenav-li .title:hover{
+    background-color: #19222d;	
+}
+
+.sidenav-li li{
+	list-style: none;
+	color: #fff;
+	height: 46px;
+	padding-top: .6rem !important 
+}
+
+.sidenav-li a{
+	padding: 0px 10px 10px 30px;
+	color: #fff !important;
+}
+
+.sidenav-li span{
+	padding-left:10px; 
+}
+
+.sidenav-li .active{
+	background: #048CBF;
+	border-left: 5px solid #42a5f5;
+}
+
+.sidenav-li .active i{
+	color: #fff !important;
+}
+.sidenav-li li:hover{
+	background: #2E4054;
+}
+
+.navbar #location{
+	color: #fff !important;
+}
+
+
+
+/**************
+
+**************/
+.content{
+	min-width:80%;
+	height: 100vh;
+	flex:1;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.content-header{
+	height: 60px;
+	border-bottom: 1px solid lightgrey;
+	background: #19222d;
+	display: none;
+}
+
+.content-header #location, #location-sm{
+	color:#fff !important;
+	font-size: 10px !important;
+}
+.content-header .btn{
+	font-size: 12px;
+	margin: 11px 15px 0px 0px;
+}
+
+#content-body{
+	height: 100%;
+	background-color: #f5f5f5;
+	font-size:15px;
+}
+
+#content-body h5{
+	color:#4E5155;
+	font-size: 16px;
+}
+
+#content-body .location{
+	font-weight:500 !important;
+	padding:10px 0px 2px 5px;
+	font-size: 20px !important;
+	color:#4E5155;
+}
+
+
+.waitlist{
+	max-height: 330px;
+	overflow:auto;
+}
+
+.dropdown #toggle-button{
+	background-color:#19222d !important;
+}
+
+a.dropdown-item{
+	color:#19222d !important;
+	padding: 10px 20px !important;
+}
+
+.scheduleLink{
+	color:#4E5155 !important;
+}
+
+.scheduleLink:hover{
+	color:inherit;
+	text-decoration: none !important;
+}
+
+
+.card{
+	padding: 0 !important;
+	border-radius: 0rem !important;
+}
+
+.navbar-text{
+	color:#4E5155;
+}
+
+#title{
+	color:#4E5155;
+}
+
+select{
+	padding:5px 25px 5px 5px;
+	-webkit-appearance:none;
+	background: url('../img/arrow_drop.png') right 2px top 50% no-repeat #fff;
+	color:#6c757d!important;
+}
+
+.notification{
+	padding-top:20px;
+}
+
+
+/**************
+Request form
+**************/
+form h5{
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+#sbtBtn{
+	font-size: 13px;
+}
+/*
+@media screen and (min-width:375px){
+	font-size:.5em;
+}
+*/
+@media screen and (min-width:740px){
+	.sign{
+		font-size:16px !important;
+	}
+}
+
+@media screen and (min-width:992px){
+	body{
+		flex-direction: column;
+	}
+	.wrapper{
+		display: flex;
+	}
+	
+	.aside .navbar a{
+		font-size:23px;
+	}
+	.navbar-brand img{
+		width:18px;
+	}
+	.content-header{
+		display: block;
+	}
+	
+	.navbar{
+		padding: .5rem 1rem !important;
+	}
+	.navbar-sm{
+		display: none !important;
+	}
+	
+	.aside{
+		min-width:200px;
+		min-height: 100vh;
+		display: block;
+	}
+	
+	.window-sm{
+		display: none !important;
+	}
+	
+	.sidenav-li{
+		display: block;
+	}
+
+	
+	.navbar-toggler{
+		display: none;
+	}
+	
+	.navbar-collapse{
+		display: none;
+	}
+	
+	.content{
+		float: right;
+		
+	}
+	
+	.notification{
+		padding-top:0px;
+	}
+}

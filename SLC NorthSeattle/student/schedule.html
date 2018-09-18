@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SLC -Student-</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+
+	<!-- Font Awesome !-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<!-- -->
+	<script src="js/cookie.js"></script>
+	<script src="js/checkLogin.js"></script>
+	<script src="js/logout.js"></script>
+	<script src="js/type.js"></script>
+	<script src="js/schedule.js"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div id="aside" class="aside">
+			<div class="sidenav">
+				<div class="navbar">
+					<a class="navbar-brand font-weight-bold " href="premath.html"><img src="img/logo.png">  SLC</a>
+					<button class="navbar-toggler toggler-example mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+					aria-expanded="false" aria-label="Toggle navigation"><span class="text-white"><i class="fa fa-bars fa-1x"></i></span></button>
+
+					<!-- Collapsible content -->
+					<div class="collapse navbar-collapse pl-3 pt-3 pb-3" id="navbarSupportedContent1">
+
+						<!-- Links -->
+						<ul class="navbar-nav mr-auto">
+
+
+							<li class="nav-item">
+								<a href="index.html" class="nav-link">
+									<i class="fa fa-dashboard">
+										<span>Dashboard</span>
+									</i>
+								</a>
+							</li>
+
+
+							<li class="nav-item">
+								<a href="schedule.html" class="active nav-link">
+									<i class="fa fa-calendar">     
+										<span>Schedule</span>
+									</i>
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="fa fa-question">
+										<span>Support</span>
+									</i>
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="" class="nav-link">
+									<i class="fa fa-sign-out">
+										<sapn class="logout">
+											Logout
+										</sapn>
+									</i>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidenav-li">
+					<ul class="pl-0">
+						<li class="title"><a>Menu</a></li>
+
+						<li>
+							<a href="index.html">
+								<i class="fa fa-dashboard">
+									<span>Dashboard</span>
+								</i>
+							</a>
+						</li>
+
+
+						<li class="active">
+							<a href="schedule.html">
+								<i class="fa fa-calendar">     
+									<span>Schedule</span>
+								</i>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<i class="fa fa-question">
+									<span>Support</span>
+								</i>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="content">
+			<div class="content-header shadow-sm">
+				<div class="text-right">
+					<button id="logout" class="btn btn-dark">Logout <i class="fa fa-sign-out"></i></button>
+				</div>
+			</div>
+			<div id="content-body">
+				<div class="container col-lg-12 col-xl-12 mt-2">
+					<div class="location">
+						<p><i class="fa fa-calendar"></i> Schedule</p>
+					</div>
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="card shadow p-0">
+								<div class="card-header rounded-0 bg-blue" id="headingOne">
+									<h5 class="mb-0 d-inline text-white left mr-4">
+										<i class="fa fa-group"></i> Available Tutors
+									</h5>
+									<div class="d-inline ml-5">
+										<select class="border text-secondary left" id="type">
+											<option>Choose a center...</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="card-body p-0">					
+									<div class="waitlistMath">
+									<table id="math" class="table table-striped">
+										<thead>
+											<tr>
+												<th class="col">#</th>
+												<th class="col">FirstName</th>
+												<th class="col">LastName</th>
+											</tr>
+										</thead>
+										<tbody class="table-body">
+
+										</tbody>
+									</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
