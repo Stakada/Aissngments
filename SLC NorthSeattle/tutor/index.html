@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="cache-control" content="no-cache"/>
+		<title>SLC</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		
+		
+		<!-- Font Awesome !-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<!-- 
+		<script src="js/checkLogin.js"></script>
+		-->
+		<script src="js/cookie.js"></script>
+		<script src="js/checkLogin.js"></script>
+		
+		
+		<script src="js/load.js"></script>
+		<script src="js/modify.js"></script>
+		<script src="js/typeOption.js"></script>
+		
+ 	</head>
+	<body>
+		<div class="wrapper">
+			<div id="aside" class="aside">
+				<div class="sidenav">
+					<div class="navbar">
+						<a class="navbar-brand font-weight-bold " href="index.html"><img src="img/logo.png">  SLC</a>	
+					</div>
+
+					<div class="sidenav-li">
+						<ul class="pl-0">
+							<li class="title"><a>Menu</a></li>
+							
+							<li class="active">
+								<a>
+									<i class="fa fa-dashboard">
+										<span>Dashboard</span>
+									</i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="content-header shadow-sm">
+					<div class="navbar">
+						<div id="location" class="navbar-text font-weight-bold" >
+							Tutor
+						</div>
+						
+					</div>
+				</div>
+				<div id="content-body">
+					<div class="container col-10 mt-5">
+						
+						<div class="border-bottom mb-4">
+							<h4 class="ml-3 font-weight-bold" >
+								<span class="fa fa-dashboard"></span> DASHBOARD
+							</h4>              
+						</div>
+						
+						
+						<div class="card">
+							<div class="card-header bg-white border-0">
+								
+								<div class="d-inline-block">
+									<h5 class="font-weight-bold"> 
+										<i class="fa fa-users blue"></i> 
+											WAITLIST
+									</h5>
+								</div>
+								
+								<div class="d-inline-block right">
+									<label for='type'>Center : </label>
+									<select id="type" class="bg-white sub_type" required>
+										<option>Select center...</option>
+									</select>
+								</div>
+								
+							</div>
+							
+							<div class="card-body">
+								<div class="waitlist">
+								<ul id="session" class="list-group">
+								</ul>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 7, 2018, 11:10:50 AM
+    Author     : Shota Takada
+*/
+body, html {
+    height: 100%;
+    margin: auto 0;
+    font-size: 3vw;
+}
+
+body{
+	background-image: url('../bg.jpg');
+}
+
+.wrapper{
+    text-align: center;
+    max-width: 40%;
+    background-color: rgba(100,100,100,0.6);
+	font-family: 'Lora', serif;
+	
+}
+
+/**************************************
+ *                                    *
+ *           Login-form               *
+ *                                    *
+ **************************************/
+.login-form{
+    margin-top:10%;
+    max-width:1200px;
+}
+
+.form-group input{
+    width:100% !important;
+    float:left;
+}
+
+
+
+/**************************************
+ *                                    *
+ *           second navbar            *
+ *                                    *
+ **************************************/
+.nav-link{
+    padding: 10px 15px !important;
+    font-size: 15px !important;
+}
+
+.nav-tabs{
+	height: 60px;
+	line-height: 40px;
+}
+
+.nav-tabs .nav-item {
+    width:33.3333333%;
+    background: #34495E;
+}
+
+.nav-tabs .nav-link{
+    color:#fff;
+    border: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	color:#fff !important;
+	background: inherit !important;	
+}
+
+
+
+/**************************************
+ *                                    *
+ *              Body                  *
+ *                                    *
+ **************************************/
+
+.navbar{
+    background: #389ADB;   
+    height:70px;
+}
+.navbar h5{
+	margin-left: 38%;
+}
+
+.header-title{
+    font-size: 27px;
+}
+.hidden{
+    display:none;
+}
+
+/**************************************
+ *                                    *
+ *             Form                   *
+ *                                    *
+ **************************************/
+.panel-body{
+	color:#616161!important;
+}
+
+.form-group input{
+	margin-bottom: 20px !important;
+}
+
+.form-group p{
+	font-weight: bold !important;
+    margin-bottom: 10px !important;
+	color: #fff !important;
+}
+
+.form-group .username{
+	width:50% !important;
+	margin-right: 5px;
+}
+
+button{
+	width:100% !important;
+    font-size:15px !important;
+	border-radius:0.15rem !important;
+}
+
+
+/**************************************
+ *                                    *
+ *           tab-pane                 *
+ *                                    *
+ **************************************/
+.tab-pane{
+    font-size:16px;
+}
+
+/****************
+ * 				*
+ * Media Query  *
+ *				*
+ ****************/
+
+
+@media(min-width:600px){
+    .form-group .ead{
+        width:55% !important;
+    }
+}
+@media(min-width:768px){
+    .navbar .navbar-brand{
+        font-size:23px;
+    }
+    
+    .jumbotron{
+        margin-top:0;
+        margin-left:150px;
+    }
+    .container{
+        padding-top: 0;
+    }
+}

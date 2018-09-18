@@ -1,0 +1,300 @@
+body{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	display: flex;
+	flex-direction: row;
+	font-size:.8rem;
+	line-height: 1.6;
+	background: #f3f6f9;
+}
+
+.wrapper{
+	width:100%;
+}
+
+.bg-blue{
+	background: #42a5f5 !important;
+}
+
+.left{
+	float:left !important;
+}
+
+/*************
+ *
+ * 	Sign in
+ *
+ *************/
+	
+.signin{
+    margin-top: 20%;
+}
+
+.signin input{
+	width: 100%;
+}
+
+
+.signin .btn{
+    width:100%;
+	margin-bottom: 10px;
+}
+
+
+/**************
+
+	Aside
+
+**************/
+
+.aside{
+	flex-shrink: 0;
+	position: relative;
+	/*min-height: 100vh;*/
+	background: #19222d;
+}
+.sidenav{
+	height: 100%;
+}
+
+.navbar{
+	padding:0 !important;
+}
+
+.aside .navbar{
+	height:56px;
+	border-bottom: 1px solid #ddd !important;
+}
+
+img{
+	width: 30px;
+	margin-bottom: 6px;
+	padding-left:10px;
+}
+
+.aside .navbar-brand{
+	font-size:25px;
+	color:#fff;
+}
+
+.collapse{
+	background:#19222d !important; 
+	z-index:999;
+}
+
+.collapse .active{
+	color:#048CBF !important; 
+}
+
+.nav-item a{
+	color: #fff !important;
+	font-size:17px !important;
+}
+
+.sidenav-li{
+	display: none;
+}
+
+.sidenav-li .title{
+	color: #ddd;
+	font-size: 14px;
+}
+
+.sidenav-li .title:hover{
+    background-color: #19222d;	
+}
+
+.sidenav-li li{
+	list-style: none;
+	color: #fff;
+	height: 46px;
+	padding-top: .6rem !important 
+}
+
+.sidenav-li a{
+	padding: 0px 10px 10px 40px;
+	color: #fff !important;
+}
+
+.sidenav-li span{
+	padding-left:10px; 
+}
+
+.sidenav-li .active{
+	background: #2E4054;
+	border-left: 5px solid #42a5f5;
+}
+
+.sidenav-li .active i{
+	color: #42a5f5 !important;
+}
+.sidenav-li li:hover{
+	background: #2E4054;
+}
+
+.navbar #location{
+	color: #fff !important;
+}
+
+
+
+/**************
+
+**************/
+.content{
+	width:100%;
+	flex:1;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.content-header{
+	height: 56px;
+	border-bottom: 1px solid lightgrey;
+	background: #19222d;
+	display: none;
+}
+
+.content-header #location{
+	color:#fff !important;
+}
+.content-header .btn{
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #048CBF !important;
+	border-color:  #048CBF !important;
+}
+
+#content-body{
+	height: 100%;
+	background-color: #f7f8fa;
+	font-size:15px;
+}
+
+#content-body h5{
+	color:#4E5155;
+	font-size: 15px;
+}
+
+#content-body #title{
+	font-size: 20px !important;
+	color:#42a5f5;
+}
+
+.container .blue{
+	color:#048CBF;
+}
+
+.card{
+	max-width: 100% !important;
+}
+.waitlist{
+	max-height: 330px;
+	overflow:auto;
+}
+
+.dropdown #toggle-button{
+	background-color:#19222d !important;
+}
+
+a.dropdown-item{
+	color:#19222d !important;
+	padding: 10px 20px !important;
+}
+
+.scheduleLink{
+	color:#4E5155 !important;
+}
+
+.scheduleLink:hover{
+	color:inherit;
+	text-decoration: none !important;
+}
+
+
+.card{
+	border-radius: 0rem !important;
+}
+
+.card .btn{
+	float:right;
+}
+.navbar-text{
+	color:#4E5155;
+}
+
+#title{
+	color:#4E5155;
+}
+
+.right{
+	float: right !important;
+}
+
+
+/**************
+Request form
+**************/
+form h5{
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+#sbtBtn{
+	font-size: 13px;
+}
+
+@media(min-width:768px){
+	body{
+		flex-direction: column;
+	}
+	
+	.wrapper{
+		display: flex;
+	}
+	
+	.navbar{
+		padding:.5rem .1rem !important;
+	}
+	.content-header{
+		display: block;
+	}
+	
+	.navbar-sm{
+		display: none !important;
+	}
+	
+	.aside{
+		width:200px;
+		min-height: 100vh;
+		display: block;
+	}
+	
+	.window-sm{
+		display: none !important;
+	}
+	
+	.sidenav-li{
+		display: block;
+	}
+	
+	.navbar-toggler, .collapse{
+		display: none;
+	}
+	
+}
+
+@media(min-width:960px){
+	.aside{
+		width:230px;
+		min-height: 100vh;
+		display: block;
+	}
+	
+	.content{
+		float: right;
+		
+	}
+}
