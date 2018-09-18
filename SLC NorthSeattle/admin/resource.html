@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SLC -Admin-</title>
+		
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!-- Font Awesome !-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	
+	<!-- login logout-->
+	<script src="js/cookie.js"></script>
+	<script src="js/logout.js"></script>
+	<script src="js/checkLogin.js"></script>
+	
+	<script src="js/resource.js"></script>
+	<script src="js/tutorType.js"></script>
+	
+	<script src="js/xlsx.core.min.js"></script>
+	<script src="js/Blob.js"></script>
+	<script src="js/FileSaver.js"></script>
+	<script src="js/tableexport.js"></script>
+	<!-- 
+	<script src="js/cookie.js"></script>
+	<script src="js/loadMath.js"></script>
+	<script src="js/checkLogin.js"></script>
+	<script src="js/logout.js"></script>-->
+
+</head>
+<body>
+	<div class="wrapper">
+		<div id="aside" class="aside">
+			<div class="sidenav">
+				<div class="navbar">
+					<a class="navbar-brand font-weight-bold " href="premath.html"><img src="img/logo.png">  SLC</a>	
+
+				</div>
+
+				<div class="sidenav-li">
+					<ul class="pl-0">
+						<li class="title"><a>Menu</a></li>
+
+						<li>
+							<a href="index.html">
+								<i class="fa fa-dashboard">
+									<span>Dashboard</span>
+								</i>
+							</a>
+						</li>
+
+						<li class="active">
+							<a>
+								<i class="fa fa-file">
+									<span>Resources</span>
+								</i>
+							</a>
+						</li>
+
+						<li>
+							<a href="student.html">
+								<i class="fa fa-graduation-cap">
+									<span>Students</span>
+								</i>
+							</a>
+						</li>
+
+						<li>
+							<a href="tutor.html">
+								<i class="fa fa-users">     
+									<span>Tutors</span>
+								</i>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="settings.html">
+								<i class="fa fa-cog">
+									<span>Settings</span>
+								</i>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="content-header shadow-sm">
+				<div class="navbar">
+					<div id="location" class="navbar-text font-weight-bold" >
+						Student Learning Center
+					</div>
+
+					<div>
+						<button id="logout" class="btn btn-dark">Logout</button>
+					</div>
+				</div>
+			</div>
+			<div id="content-body">
+				<div class="container-fluid col-11 mt-3">
+					<div class="border-bottom mb-3">
+						<p class="ml-3 location">
+							<span class="fa fa-file"></span>  RESOURCES
+						</p>              
+					</div>
+					
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+					 	<li class="nav-item">
+							<a class="nav-link active" id="accum-tab" data-toggle="tab" href="#accum" role="tab" aria-controls="accum" aria-selected="true"><i class="fa fa-bar-chart"></i>Accumlated</a>
+					  	</li>
+						<li class="nav-item">
+							<a class="nav-link" id="resource-tab" data-toggle="tab" href="#detail" role="tab" aria-controls="detail" aria-selected="true"><i class="fa fa-bar-chart"></i>Detail</a>
+					  	</li>
+					</ul>
+
+					<div class="tab-content" id="myTabContent">
+					 	<div class="tab-pane fade show active" id="accum" role="tabpanel" aria-labelledby="accum-tab">
+							<div class="col-12 pr-0 pl-0">
+								<div class="card border-top-0">
+									<div class="card-header bg-white"> 
+										<form type="POST" id="form" class="d-inline">
+											<div class="form-group col-3 d-inline border-right">
+												<label for="accum-center">Center : </label>
+												<select id="accum-center" class="tutorType bg-white" required>
+													<option>All</option>
+												</select>
+											</div>
+
+											<div class="form-group col-3 d-inline border-right text-dark">
+												Start : <input type="date" id="accum-start" class="border rounded" required>
+											</div>
+
+											<div class="form-group col-3 d-inline border-right text-dark">
+												End : <input type="date" id="accum-end"  class="border rounded" required>
+											</div>
+
+
+											<div class="form-group col-3 d-inline">
+												<button type="submit" class="btn bg-blue text-white mb-2" id="btnAccumReport">Create Report</button>
+											</div>
+										</form>
+									</div>
+							
+									<div class="card-body">
+										<table id="accum-report-table" class="table table-striped table-hover">
+											<thead class="thead-dark">
+												<tr>
+													<th scope="col">No</th>
+													<th scope="col">Subject</th>
+													<th scope="col">Center</th>
+													<th scope="col">Access</th>
+													<th scope="col">Total Time</th>
+												</tr>
+											</thead>
+											<tbody id="accum-table-body">
+												
+												
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+							<div class="col-12 pr-0 pl-0">
+								<div class="card border-top-0">
+									<div class="card-header bg-white"> 
+										<form type="POST" id="form" class="d-inline">
+											<div class="form-group col-3 d-inline border-right">
+												<label for="detail-center">Center : </label>
+												<select id="detail-center" class="tutorType bg-white" required>
+												</select>
+											</div>
+
+											<div class="form-group col-3 d-inline border-right text-dark">
+												Start : <input type="date" id="detail-start" class="border rounded" required>
+											</div>
+
+											<div class="form-group col-3 d-inline border-right text-dark">
+												End : <input type="date" id="detail-end"  class="border rounded" required>
+											</div>
+
+
+											<div class="form-group col-3 d-inline">
+												<button type="submit" class="btn bg-blue text-white mb-2" id="btnDetailReport">Create Report</button>
+											</div>
+										</form>
+									</div>
+							
+									<div class="card-body">
+										<table id="detail-report-table" class="table table-striped table-hover">
+											<thead class="thead-dark">
+												<tr>
+													<th scope="col">No</th>
+													<th scope="col">Center</th>
+													<th scope="col">Subject</th>
+													<th scope="col">Start Time</th>
+													<th scope="col">End Time</th>
+												</tr>
+											</thead>
+											<tbody id="detail-table-body">
+												
+												
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$("#btnAccumReport").on('click',function(){
+				$('caption').empty();
+				setTimeout(function(){
+					$('#accum-report-table').tableExport();
+				},300);
+			});
+		});
+		$(document).ready(function(){
+			$("#btnDetailReport").on('click',function(){
+				$('caption').empty();
+				setTimeout(function(){
+					$('#detail-report-table').tableExport();
+				},300);
+			});
+		});
+		
+	</script>
+</body>
+</html>

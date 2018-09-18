@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SLC -Admin-</title>
+		
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!-- Font Awesome !-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<!-- login logout-->
+	<script src="js/cookie.js"></script>
+	<script src="js/logout.js"></script>
+	<script src="js/checkLogin.js"></script>
+	
+	
+	<script src="js/notification.js"></script>
+	<script src="js/subject.js"></script>
+	<script src="js/typeTable.js"></script>
+	<script src="js/type.js"></script>
+	<script src="js/admin.js"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div id="aside" class="aside">
+			<div class="sidenav">
+				<div class="navbar">
+					<a class="navbar-brand font-weight-bold " href="premath.html"><img src="img/logo.png">  SLC</a>	
+
+				</div>
+
+				<div class="sidenav-li">
+					<ul class="pl-0">
+						<li class="title"><a>Menu</a></li>
+
+						<li>
+							<a href="index.html">
+								<i class="fa fa-dashboard">
+									<span>Dashboard</span>
+								</i>
+							</a>
+						</li>
+
+						<li>
+							<a href="resource.html">
+								<i class="fa fa-file">
+									<span>Resources</span>
+								</i>
+							</a>
+						</li>
+
+						<li>
+							<a href="student.html">
+								<i class="fa fa-graduation-cap">
+									<span>Students</span>
+								</i>
+							</a>
+						</li>
+
+						<li>
+							<a href="tutor.html">
+								<i class="fa fa-users">     
+									<span>Tutors</span>
+								</i>
+							</a>
+						</li>
+
+
+						<li class="active">
+							<a href="#">
+								<i class="fa fa-cog">
+									<span>Settings</span>
+								</i>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="content-header shadow-sm">
+				<div class="navbar">
+					<div id="location" class="navbar-text font-weight-bold" >
+						Student Learning Center
+					</div>
+
+					<div>
+						<button id="logout" class="btn btn-dark">Logout</button>
+					</div>
+				</div>
+			</div>
+			<div id="content-body">
+				<div class="container-fluid col-12 mt-3">
+					
+					<div class="mb-3">
+						<p class="ml-3 location font-weight-light">
+							<span class="fa fa-cog"></span> Settings
+						</p>              
+					</div>	
+					<nav>
+						<div class="nav nav-tabs settings" id="nav-tab" role="tablist">
+						
+							<a class="nav-item nav-link active" id="nav-admimn-tab" data-toggle="tab" href="#nav-admin" role="tab" aria-controls="nav-admin" aria-selected="true"><i class="fa fa-user"></i> Administrator</a>
+						
+							<a class="nav-item nav-link" id="nav-center-tab" data-toggle="tab" href="#nav-center" role="tab" aria-controls="nav-center" aria-selected="false"><i class="fa fa-building"></i> Center</a>
+						
+							<a class="nav-item nav-link" id="nav-sub-tab" data-toggle="tab" href="#nav-sub" role="tab" aria-controls="nav-sub" aria-selected="false"><i class="fa fa-book"></i> Subjects</a>
+					  
+						</div>
+					
+					</nav>
+					<div class="tab-content mt-4 mb-4" id="nav-tabContent">
+					
+						<div class="tab-pane fade show active" id="nav-admin" role="tabpanel" aria-labelledby="nav-admin-tab">
+							<div class="card mb-4">
+								<div class="card-header bg-white p-3" id="headingOne">
+									<h5 class="mb-0">
+										<i class="fa fa-edit"></i>
+									  	Add new administrator
+									</h5>
+								</div>
+
+								  <div class="card-body">
+	
+									<form class="col-6 left pt-2">
+	
+										<div class="form-group">
+	
+											<label for="subject">First Name :</label>
+	
+											<input type="text" class="form-control" id="fname" placeholder="Enter First Name" required>
+	
+										</div>	
+	
+										<div class="form-group">
+	
+											<label for="subject">Last Name :</label>
+	
+											<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" required>
+			
+										</div>	
+			
+										<div class="form-group">
+			
+											<label for="subject">Email :</label>
+					
+											<input type="email" class="form-control" id="email" placeholder="Enter email" required>
+			
+										</div>	
+			
+										<div class="form-group">
+				
+											<label for="subject">Password :</label>
+				
+											<input type="password" class="form-control" id="pass" placeholder="Enter password" required>
+			
+										</div>	
+			
+
+
+
+			
+										<div class="form-group">
+			
+											<button type="submit" class="btn bg-blue text-white" id="addAdmin">Add</button>
+			
+										</div>
+		
+									</form>	
+    	
+								
+								</div>
+							
+							</div>
+							<div class="card">
+							<div class="card-header bg-white p-3" id="headingTwo">
+							  <h5 class="mb-0">
+								<i class="fa fa-list"></i>
+								  Administrator List
+								</h5>
+							</div>
+								
+							<div class="card-body">
+								<div id="admin-list" class="col-6 pt-3">
+									<table class="table table-striped table-hover">
+										<thead class="thead-dark">
+											<tr>
+												<th scope="col">No.</th>				
+													<th scope="col">First Name</th>
+												<th scope="col">Last Name</th>
+												<th scope="col">Email</th>
+											</tr></thead>
+										<tbody id="admin-table-body"></tbody>
+									</table>
+								</div>
+							  </div>
+							</div>
+						</div>
+					  
+						<div class="tab-pane fade" id="nav-center" role="tabpanel" aria-labelledby="nav-center-tab">
+							<div class="card mb-4">
+								<div class="card-header bg-white p-3" id="headingTwo">
+								  	<h5 class="mb-0">
+										<i class="fa fa-edit"></i>
+									  	Add Center
+									</h5>
+								</div>
+							  	<div class="card-body">
+									<form class="col-6 left pt-2">
+
+										<div class="form-group">
+
+											<label for="subject">Tutor Type :</label>
+
+											<input type="text" class="form-control" id="type-name" placeholder="Enter type" required>
+
+										</div>	
+
+										<div class="form-group">
+
+											<button type="submit" class="btn bg-blue text-white" id="addType">Add</button>
+
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="card mb-4">
+								<div class="card-header bg-white p-3" id="headingTwo">
+								  	<h5 class="mb-0">
+									 	<i class="fa fa-list"></i>
+										Center List
+									</h5>
+								</div>
+								<div class="card-body">
+									<div id="subjects" class="col-6 pt-3">
+										<table class="table table-striped table-hover">
+											<thead class="thead-dark">
+												<tr>
+													<th scope="col">No.</th>
+													<th scope="col">Type</th>
+												</tr></thead>
+											<tbody id="type-table-body"></tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					  
+					 	<div class="tab-pane fade" id="nav-sub" role="tabpanel" aria-labelledby="nav-sub-tab">
+							<div class="card mb-4">
+								<div class="card-header bg-white p-3" id="headingOne">
+									<h5 class="mb-0">
+										<i class="fa fa-edit"></i>
+										Add new subject
+									</h5>
+								</div>
+								<div class="card-body pt-0">
+									<form class="col-6 left pt-2">
+										<div class="form-group">
+											<label for="subject">Subject :</label>
+											<input type="text" class="form-control" id="subject_name" placeholder="Enter subject" required>
+										</div>	
+										<div class="form-group">
+											<label for="type">Center :</label>
+											<select class="form-control center_type" required>
+											</select>
+										</div>	
+
+										<div class="form-group">
+											<button type="submit" class="btn bg-blue text-white" id="addSub">Add</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						 
+							<div class="card mb-4">
+								<div class="card-header bg-white p-3" id="headingTwo">
+									<div class="left">
+										<h5 class="mt-2">
+											<i class="fa fa-list"></i>Subject List</h5>
+									</div>
+									<div class="right">
+										<label for='sub_type'>Center : </label>
+										<select id="sub_type" class="bg-white sub_type" required>
+											<option>All</option>
+										</select>
+									</div>
+								</div>
+								 
+							<div class="card-body pt-0">
+								<div  id="subjects" class="col-6 pt-3">
+									<table class="table table-striped table-hover">
+										<thead class="thead-dark">
+											<tr>
+												<th scope="col">Subject</th>
+												<th scope="col">Center</th>
+												<th></th>
+											</tr></thead>
+										<tbody id="subject-table-body"></tbody>
+									</table>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

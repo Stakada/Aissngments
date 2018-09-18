@@ -1,0 +1,310 @@
+body{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	display: flex;
+	flex-direction: row;
+	font-size:.8rem;
+	line-height: 1.6;
+	background: #f3f6f9;
+}
+
+.wrapper{
+	width:100%;
+}
+
+
+/****************************************************
+ *
+ *					Colors
+ *
+ ***************************************************/
+
+.bg-blue{
+	background: #42a5f5 !important;
+}
+
+.bg-lightblue{
+	background: #06D4D6 !important;
+}
+
+.bg-green{
+	background: #06CC96 !important;
+}
+
+.text-blue{
+	color:#42a5f5 !important;
+}
+
+.text-green{
+	color:#06CC96 !important;
+}
+
+.text-lightblue{
+	color: #06D4D6!important;
+}
+
+
+/**************
+
+	Aside
+
+**************/
+
+.aside{
+	flex-shrink: 0;
+	position: relative;
+	/*min-height: 100vh;*/
+	background: #19222d;
+}
+.sidenav{
+	height: 100%;
+}
+.aside .navbar{
+	height:56px;
+	border-bottom: 1px solid #ddd !important;
+}
+
+img{width: 20px;margin-bottom: 6px;}
+
+.aside .navbar a{
+	font-size:25px;
+	color:#fff;
+}
+
+.sidenav-li{
+	display: none;
+}
+
+.sidenav-li .title{
+	color: #ddd;
+	font-size: 14px;
+}
+
+.sidenav-li .title:hover{
+    background-color: #19222d;	
+}
+
+.sidenav-li li{
+	list-style: none;
+	color: #fff;
+	height: 46px;
+	padding-top: .6rem !important 
+}
+
+.sidenav-li a{
+	padding: 0px 10px 10px 40px;
+	color: #fff !important;
+}
+
+.sidenav-li span{
+	padding-left:10px; 
+}
+
+.sidenav-li .active{
+	background: #2E4054;
+	border-left: 5px solid #42a5f5;
+}
+
+.sidenav-li .active i{
+	color: #42a5f5 !important;
+}
+.sidenav-li li:hover{
+	background: #2E4054;
+}
+
+.navbar #location{
+	color: #fff !important;
+}
+
+
+/**************
+
+**************/
+.content{
+	width:100%;
+	flex:1;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.content-header{
+	height: 56px;
+	border-bottom: 1px solid lightgrey;
+	background: #19222d;
+	display: none;
+}
+
+.location{
+	font-size: 18px;
+	font-weight:300!important;
+}
+.content-header .btn{
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #048CBF !important;
+	border-color:  #048CBF !important;
+}
+
+#content-body{
+	height: 100%;
+	background-color: #f5f5f5;
+	font-size:15px;
+}
+
+#content-body h5{
+	color:#4E5155;
+	font-size: 15px;
+}
+
+#content-body #title{
+	font-size: 20px !important;
+	color:#42a5f5;
+}
+
+.container .blue{
+	color:#048CBF;
+}
+
+.dropdown #toggle-button{
+	background-color:#19222d !important;
+}
+
+a.dropdown-item{
+	color:#19222d !important;
+	padding: 10px 20px !important;
+}
+
+.scheduleLink{
+	color:#4E5155 !important;
+}
+
+.scheduleLink:hover{
+	color:inherit;
+	text-decoration: none !important;
+}
+
+
+.navbar-text{
+	color:#4E5155;
+}
+
+#title{
+	color:#4E5155;
+}
+
+select{
+	padding:5px 25px 5px 5px;
+	-webkit-appearance:none;
+	background: url('../img/arrow_drop.png') right 2px top 50% no-repeat #fff;
+}
+
+.card{
+	border-radius: 0 !important;
+	box-shadow: 0 .1rem .1rem rgba(0,0,0,.15)!important;
+}
+
+a.nav-link{
+	color:#343a40!important;
+	background: lightgrey;
+}
+
+.settings .nav-link{
+	border: 0 !important;
+	border-radius: 0 !important;
+	background: transparent !important;
+}
+
+.settings .active{
+	border-bottom: 1px solid #42a5f5!important;
+}
+
+#subjects{
+	max-height: 300px;
+	overflow: auto;
+}
+
+.right{
+	float:right !important;
+}
+
+.left{
+	float:left !important;
+}
+
+
+.btn.btn-link:not(.collapsed){
+	color:#42a5f5 !important;
+}
+
+.btn.collapsed{
+	color:#111 !important;
+}
+
+.txt-large{
+	color:#fff !important;
+	font-size: 20px !important;
+	margin-left:2rem !important;
+}
+
+
+
+/**************
+Request form
+**************/
+form h5{
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+#sbtBtn{
+	font-size: 13px;
+}
+
+@media(min-width:365px and max-width:614px){
+	.signin{
+		padding-left:15% !important;
+	}
+}
+
+@media(min-width:615px){
+	body{
+		flex-direction: column;
+	}
+	
+	.wrapper{
+		display: flex;
+	}
+	
+	.content-header{
+		display: block;
+	}
+	
+	.navbar-sm{
+		display: none !important;
+	}
+	
+	.aside{
+		width:200px;
+		min-height: 100vh;
+		display: block;
+	}
+	
+	.window-sm{
+		display: none !important;
+	}
+	
+	.sidenav-li{
+		display: block;
+	}
+}
+
+@media(min-width:960px){	
+	.content{
+		float: right;
+		
+	}
+	
+	
+}
