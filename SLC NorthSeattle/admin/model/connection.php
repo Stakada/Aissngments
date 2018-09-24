@@ -1,10 +1,10 @@
 <?php
 class DBclass{
     //devlare log in information
-    private $servername = "localhost";
-    private $username = "root";
-    private $password = "W0rds2say";
-    private $dbname = "slc";
+    private $servername = "";
+    private $username = "";
+    private $password = "";
+    private $dbname = "";
 
 
     //connection variable
