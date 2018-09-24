@@ -52,7 +52,7 @@ class Session{
 		$start = date("Y-m-d", time() - 3600*24) . " 0:00:00";
 		$end = date("Y-m-d", time() - 3600*24) . " 23:59:59";
 
-		$sql= "SELECT `student_id` FROM `Session` JOIN SessionTime ON Session.session_id = SessionTime.session_id WHERE center ='Writing' AND `student_id` = $this->student_id AND timeEnd BETWEEN '2018-09-11 00:00:00' AND '2018-09-11 23:59:59'";
+		$sql= "SELECT `student_id` FROM `Session` JOIN SessionTime ON Session.session_id = SessionTime.session_id WHERE center ='Writing' AND `student_id` = $this->student_id AND timeEnd BETWEEN '$start' AND '$end'";
 
 		$result = $this->conn->query($sql);
 		if($result->rowCount() >= 2){
