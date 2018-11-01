@@ -2,8 +2,7 @@
 The programs I wrote in Java, HTML, etc. 
 ## Java
 - [Sorting](https://github.com/Stakada/Aissngments/tree/master/Sorting)
-- Serching
-- MVC
+
 - - - 
 
 ## HTML, CSS, JavaScript
